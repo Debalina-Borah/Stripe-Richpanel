@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background: #1E5296;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      width: 80%;
+      max-width: 800px;
+      background-color: #f4f7f8;
+      border-radius: 5px;
+      padding: 20px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .left-section,
+    .right-section {
+      flex: 1;
+      padding: 20px;
+    }
+    .left-section {
+        width: 70%;
+    }
+    .left-section {
+      border-right: 1px solid #ccc;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      color: #1F2022;
+    }
+
+    h2 {
+      margin: 0;
+      padding: 0;
+      font-size: 24px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 18px;
+      font-weight: 800;
+    }
+
+    input,
+    button {
+      width: 90%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 2px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      margin-right: 5px;
+    }
+
+    button {
+      background-color: #1E5296;
+      color: white;
+      margin-top: 20px;
+      width: 50%;
+    }
+
+    .right-section {
+      background-color: #F5F5F7 !important;
+    }
+
+    .right-section p {
+      font-weight: 800;
+      margin-bottom: 5px;
+      font-size: 18px;
+      color: #9A9A9A;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-section">
+      <div class="header">
+        <h2>Complete Payment</h2>
+      </div>
+      <p style="color: #9A9A9A;">Enter your credit or debit details below</p>
+      <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="Card number                              MM/YY CVC">
+      <button>Confirm Payment</button>
+    </div>
+    <div class="right-section">
+      <div class="header">
+        <h2>Order Summary</h2>
+      </div>
+    <div style="display: flex;"> 
+        <p>Plan name:  </p>
+        <p style="text-align: end;">Basic</p>
+    </div>
+      <p>Billing Cycle: Monthly</p>
+      <p>Plan Price: 200/mo</p>
+    </div>
+  </div>
+</body>
+</html>

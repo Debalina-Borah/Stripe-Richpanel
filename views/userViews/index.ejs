@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stripe</title> 
+	<style>
+        
+        .toggle-option {
+            cursor: pointer;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            color: #333;
+        }
+
+        .toggle-option.active {
+            background-color: #7894BD;
+            color: #fff;
+        }
+		body {
+			justify-content: center;
+			align-items: center;
+			
+            font-family: 'Nunito', sans-serif;
+		}
+        .table {
+            display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 90vh;
+            margin-top: -20px !important;
+        }
+        
+        table {
+            border-collapse: collapse; /* Remove default spacing between border cells */
+			border: 0px solid #b3adad;
+			border-collapse: collapse;
+			padding: 5px;
+			width: 70%; /* Updated to occupy 70% of the window */
+			max-width: 100%;
+            height: 70%;
+            margin-top: -140px !important;
+		}
+
+		table th {
+            border-collapse: collapse; /* Remove default spacing between border cells */
+			border: 0px solid #b3adad;
+			padding: 5px;
+			color: #fffdfd;
+			width: 70px; /* Adjusted width for square shape */
+			height: 70px; /* Adjusted height for square shape */
+			text-align: left;
+			line-height: 70px; /* Center content vertically */
+			margin: 50px; /* Added margin for gap between headers */
+			position: relative;
+		}
+
+		table th::before {
+			content: "";
+			display: block;
+			width: 20px; /* Adjust as needed */
+			height: 20px; /* Adjust as needed */
+			background-color: #001F3F; /* Dark blue color */
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: -1; /* Move the box behind the text */
+		}
+
+		table td {
+            border-collapse: collapse; /* Remove default spacing between border cells */
+			border-bottom: 1px solid #dfdfdf;
+			text-align: center;
+			padding: 10px;
+			background: #ffffff;
+			color: #737373;
+			cursor: pointer;
+            font-weight: 500;
+            font-style: normal;
+		}
+        .card {
+            margin-left: auto; /* Add auto margin on left and right to center the content */
+            margin-right: auto;
+            background-color: #7894BD;
+            height: 90px;
+            width: 90px;
+            display: flex; /* Use flexbox */
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Center content vertically */
+        }
+        .heading-container {
+            display: flex;
+            align-items: center;
+        }
+        .heading-line {
+            flex-grow: 1;
+            height: 1px;
+            margin-bottom: -10px;
+            color: #323333;
+        }
+    
+#app-cover {
+  display: table;
+  counter-reset: button-counter;
+}
+
+.row {
+  display: table-row;
+}
+
+.toggle-button-cover {
+  display: table-cell;
+  position: relative;
+  width: 200px;
+  height: 140px;
+  box-sizing: border-box;
+}
+
+.button-cover {
+  height: 100px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.button-cover:before {
+  counter-increment: button-counter;
+  content: counter(button-counter);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #d7e3e3;
+  font-size: 12px;
+  line-height: 1;
+  padding: 5px;
+}
+
+.button-cover,
+.knobs,
+.layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.button {
+  position: relative;
+  top: 50%;
+  width: 120px;
+  height: 42px;
+  margin: 0 0 0 0;
+  overflow: hidden;
+}
+
+.button.r,
+.button.r .layer {
+  border-radius: 100px;
+}
+
+.button.b2 {
+  border-radius: 20px;
+}
+
+.checkbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+  border-radius: 30px;
+}
+
+.knobs {
+  z-index: 2;
+}
+
+.layer {
+  width: 100%;
+  background-color: #1E4C91;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+/* Button 10 */
+#button-10 .knobs:before,
+#button-10 .knobs:after,
+#button-10 .knobs span {
+  position: absolute;
+  top: 4px;
+  width: 57px;
+  height: 16px;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  padding: 9px 2px;
+  border-radius: 18px;
+  transition: 0.3s ease all;
+}
+
+#button-10 .knobs:before {
+  content: "";
+  left: 3px;
+  background-color: #FFFFFF;
+  color: #1E4C91;
+  display: flex;
+  text-align: center;
+}
+
+#button-10 .knobs:after {
+    display: flex;
+    align-items: center;
+    
+  content: "Yearly";
+  right: -8px;
+  color: #1E4C91;
+}
+
+#button-10 .knobs span {
+  display: inline-block;
+  left: 4px;
+  color: #1E4C91;
+  z-index: 1;
+}
+
+#button-10 .checkbox:checked + .knobs span {
+  color: #FFFFFE;
+}l
+
+#button-10 .checkbox:checked + .knobs:before {
+  left: 55px;
+  background-color: #FFFFFE;
+}
+
+#button-10 .checkbox:checked + .knobs:after {
+  color: #1E4C91;
+}
+
+#button-10 .checkbox:checked ~ .layer {
+  background-color: #1E4C91;
+}
+.center-button {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px; /* Adjust the padding as needed */
+        margin-top: -40px;
+    }
+
+    .center-button button {
+        padding: 10px 130px; /* Adjust the padding as needed */
+        background-color: #1E4C91;
+        color: #d7e3e3;
+        margin-top: -40px;
+        border-radius: 5px;
+    }
+	</style>
+    	<script>
+            window.onload = function() {
+                const tableCells = document.querySelectorAll("table tr td");
+    
+                tableCells.forEach(cell => {
+                    cell.addEventListener("mouseenter", () => {
+                        const columnIndex = cell.cellIndex;
+                        const rows = document.querySelectorAll("table tr");
+    
+                        rows.forEach(row => {
+                            const rowCells = row.cells;
+                            rowCells[columnIndex].style.color = "#1F4D90";
+                            rowCells[columnIndex].style.color = "#1F4D9";
+                        });
+                        const cards = document.querySelectorAll(".card");
+                        cards.forEach((card, cardIndex) => {
+                            if (cardIndex === columnIndex-1) {
+                                card.style.backgroundColor = "#1F4D90";
+                                card.style.color="#fffdfd"
+                            } else {
+                                card.style.backgroundColor = ""; // Reset card background color
+                            }
+                        });
+                    });
+    
+                    cell.addEventListener("mouseleave", () => {
+                        const columnIndex = cell.cellIndex;
+                        const rows = document.querySelectorAll("table tr");
+    
+                        rows.forEach(row => {
+                            const rowCells = row.cells;
+                            rowCells[columnIndex].style.backgroundColor = "";
+                            rowCells[columnIndex].style.color = "";
+                        });
+                        const cards = document.querySelectorAll(".card");
+                        cards.forEach((card) => {
+                            card.style.backgroundColor = ""; // Reset card background color
+                        });
+                    });
+                });
+            };
+            
+        </script>
+</head>
+<body>
+    <div class="heading-container">
+        <div class="heading-line"></div>
+        <h2>Choose the right plan for you</h2>
+        <div class="heading-line"></div>
+    </div>
+    <div class="table">
+       
+	<table>
+		<thead>
+			<tr>
+				<th>
+                    <div id="app-cover" >
+                    <div class="row">
+                        <div class="toggle-button-cover">
+                          <div class="button-cover">
+                            <div class="button b2" id="button-10">
+                              <input type="checkbox" class="checkbox" />
+                              <div class="knobs">
+                                <span style="display: flex; align-items: center;">Monthly</span>
+                              </div>
+                              <div class="layer"></div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    </div>
+                </th>
+				<th class="mobile">
+                    <div class="card">
+                        Mobile
+                    </div>
+                </th>
+				<th>
+                    <div class="card">
+                        Basic
+                    </div>
+                </th>
+				<th>
+                    <div class="card">
+                        Standard
+                    </div>
+                </th>
+				<th>
+                    <div class="card">
+                        Premium
+                    </div>
+                </th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="monthly">
+				<td style="text-align: left;">Monthly Price</td>
+				<td class="monthly">100</td>
+				<td>200</td>
+				<td>500</td>
+				<td>700</td>
+			</tr>
+			<tr>
+				<td style="text-align: left;">Video Quality</td>
+				<td class="monthly">Good</td>
+				<td>Good</td>
+				<td>Better</td>
+				<td>Best</td>
+			</tr>
+			<tr>
+				<td style="text-align: left;">Resolution</td>
+				<td>480p</td>
+				<td>480p</td>
+				<td>1080p</td>
+				<td>4K+HDR</td>
+			</tr>
+			<tr>
+				<td style="text-align: left;">Devices you can watch</td>
+				<td>Mobile</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <div class="center-button">
+        <button class="next" href="pay.ejs" >Next</button>
+    </div>
+    </body>
+    </html>

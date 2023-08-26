@@ -1,0 +1,1661 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Head -->
+    <head>
+        <!-- Page Meta Tags-->
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <meta name="keywords" content="" />
+
+        <!-- Custom Google Fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Roboto:wght@300;400;700&display=auto"
+            rel="stylesheet"
+        />
+
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/assets/images/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/assets/images/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/assets/images/favicon/favicon-16x16.png"
+        />
+        <link
+            rel="mask-icon"
+            href="/assets/images/favicon/safari-pinned-tab.svg"
+            color="#5bbad5"
+        />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- Vendor CSS -->
+        <link rel="stylesheet" href="/assets/css/libs.bundle.css" />
+
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="/assets/css/theme.bundle.css" />
+
+        <!-- Fix for custom scrollbar if JS is disabled-->
+        <noscript>
+            <style>
+                /**
+          * Reinstate scrolling for non-JS clients
+          */
+                .simplebar-content-wrapper {
+                    overflow: auto;
+                }
+                
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+.menu, .full, .three, .newsletter, .blog-three, .about-content {
+  padding: 0 3%;
+}
+@media (max-width: 480px) {
+  .menu, .full, .three, .newsletter, .blog-three, .about-content {
+    padding: 0 0px;
+  }
+}
+
+.wrapper a {
+  text-decoration: none;
+}
+.wrapper .menu {
+  display: flex;
+  text-align: center;
+  max-width: 100%;
+  flex-flow: row wrap;
+  padding-top: 30px;
+}
+.wrapper .menu a {
+  padding: 20px;
+  color: black;
+}
+.wrapper .menu > div {
+  flex: 2;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  font-family: DalaFloda Roman;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+  padding-top: 30px;
+}
+.wrapper .menu > div:nth-child(2) {
+  flex: 1;
+}
+.wrapper .menu .logo {
+  flex: 1;
+  padding-top: 40px;
+}
+@media (max-width: 480px) {
+  .wrapper .menu {
+    padding: 0;
+  }
+  .wrapper .menu .logo {
+    padding: 5% 3% 0 3%;
+    order: -1;
+    flex-basis: 100%;
+    flex-grow: 1;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .wrapper .menu div:first-child {
+    font-size: 18px;
+    padding: 0 3%;
+    display: inline-flex;
+    flex: 1;
+    order: 1;
+    min-width: 100px;
+    flex-direction: row;
+    text-align: center;
+  }
+  .wrapper .menu div:last-child {
+    font-size: 18px;
+    padding: 0 3%;
+    display: inline-flex;
+    min-width: 100px;
+    order: 2;
+    flex: 1;
+    flex-direction: row;
+    text-align: center;
+  }
+}
+.wrapper .slider img {
+  flex: 1;
+  width: 100%;
+}
+.wrapper .slider figcaption {
+  position: absolute;
+  top: 38%;
+  left: 0%;
+  text-align: center;
+  width: 100%;
+}
+.wrapper .slider figcaption span {
+  color: white;
+  font-family: Dala Floda;
+  font-size: 67px;
+  line-height: 67.07px;
+  color: #FFFFFF;
+  text-align: center;
+}
+@media (max-width: 480px) {
+  .wrapper .slider figcaption span {
+    font-size: 32px;
+  }
+}
+.wrapper .slider-container {
+  position: relative;
+}
+.wrapper .intro {
+  flex: 1;
+  width: 100%;
+  padding: 6% 0;
+  text-align: center;
+  color: black;
+  font-family: Dala Floda;
+  font-size: 48px;
+}
+@media (max-width: 480px) {
+  .wrapper .intro {
+    font-size: 28px;
+  }
+}
+.wrapper .three {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  padding-bottom: 100px;
+}
+.wrapper .three img {
+  width: 100%;
+}
+.wrapper .three > div {
+  flex: 1;
+  padding: 0 55px 0 0;
+}
+.wrapper .three > div:last-child {
+  padding: 0;
+}
+@media (max-width: 480px) {
+  .wrapper .three > div {
+    padding: 0;
+    flex-basis: 100%;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .wrapper .three > div p {
+    font-size: 12px;
+    padding-bottom: 20px;
+  }
+  .wrapper .three > div h3 {
+    font-size: 22px;
+  }
+}
+.wrapper .three p {
+  font-family: "Karla", sans-serif;
+  font-size: 18px;
+  color: #010101;
+  text-align: center;
+}
+.wrapper .three h3 {
+  font-family: Dala Floda;
+  font-size: 35px;
+  color: #010101;
+  text-align: center;
+}
+.wrapper .newsletter {
+  display: flex;
+  flex-flow: row wrap;
+  background: #D7E9F7;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  align-items: center;
+}
+.wrapper .newsletter > div {
+  flex: 1;
+  padding: 0 60px 0 0;
+}
+.wrapper .newsletter > div:last-child {
+  padding: 0;
+}
+@media (max-width: 480px) {
+  .wrapper .newsletter > div {
+    padding: 0;
+    flex-basis: 100%;
+    text-align: center;
+    padding: 1% 0;
+  }
+  .wrapper .newsletter > div form {
+    text-align: center;
+    padding-top: 1%;
+  }
+}
+.wrapper .newsletter form {
+  text-align: right;
+}
+.wrapper .newsletter h3 {
+  font-family: Dala Floda;
+  font-size: 35px;
+  line-height: 40px;
+  color: #010101;
+}
+.wrapper .newsletter p {
+  text-align: center;
+  font-family: "Karla", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+  color: #010101;
+}
+.wrapper .blog-intro {
+  text-align: center;
+  padding: 50px 0;
+  font-family: Dala Floda;
+  font-size: 48px;
+  color: #010101;
+}
+@media (max-width: 480px) {
+  .wrapper .blog-intro {
+    font-size: 28px;
+  }
+}
+.wrapper .blog-three {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  padding-bottom: 120px;
+}
+.wrapper .blog-three img {
+  width: 100%;
+}
+.wrapper .blog-three > div {
+  flex: 1;
+  padding: 0 55px 0 0;
+}
+.wrapper .blog-three > div:last-child {
+  padding: 0;
+}
+@media (max-width: 480px) {
+  .wrapper .blog-three > div {
+    padding: 0;
+    flex-basis: 100%;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .wrapper .blog-three > div p {
+    font-size: 12px;
+  }
+  .wrapper .blog-three > div h3 {
+    font-size: 22px;
+  }
+}
+.wrapper .blog-three p {
+  font-family: "Karla", sans-serif;
+  font-size: 18px;
+  color: #010101;
+  text-align: center;
+}
+.wrapper .blog-three h3 {
+  font-family: Dala Floda;
+  font-size: 35px;
+  color: #010101;
+  text-align: center;
+}
+.wrapper footer > div.full {
+  display: flex;
+  background: black;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.wrapper footer > div.full div:last-child {
+  padding: 0;
+}
+.wrapper footer > div.full ul {
+  list-style-type: none;
+}
+@media (max-width: 480px) {
+  .wrapper footer > div.full {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+  .wrapper footer > div.full .address {
+    padding: 0 10%;
+    order: -2;
+    flex: 1;
+  }
+  .wrapper footer > div.full .times {
+    padding: 0 10%;
+    order: 2;
+    flex: 2;
+    min-width: 35%;
+  }
+  .wrapper footer > div.full .social {
+    order: 1;
+    flex: 1;
+  }
+  .wrapper footer > div.full .credit {
+    order: 3;
+    flex: 1;
+  }
+  .wrapper footer > div.full ul {
+    padding: 5% 0;
+  }
+}
+.wrapper footer > div.full .address {
+  flex: 2;
+  color: white;
+  font-family: "Karla", sans-serif;
+  font-size: 17px;
+  line-height: 23px;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+}
+@media (max-width: 480px) {
+  .wrapper footer > div.full .address {
+    text-align: left;
+  }
+}
+.wrapper footer > div.full .times {
+  flex: 1;
+  color: white;
+  font-family: "Myriad Pro", Calibri, sans-serif;
+  font-size: 17px;
+  line-height: 23px;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+}
+@media (max-width: 480px) {
+  .wrapper footer > div.full .times {
+    text-align: left;
+  }
+}
+.wrapper footer > div.full .times .italic {
+  font-style: italic;
+}
+.wrapper footer > div.full .social {
+  flex: 2;
+}
+.wrapper footer > div.full .social a {
+  text-decoration: none;
+  color: white;
+  font-family: "Karla", sans-serif;
+  font-size: 17px;
+  line-height: 23px;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+}
+@media (max-width: 480px) {
+  .wrapper footer > div.full .social {
+    text-align: left;
+  }
+}
+.wrapper footer > div.full .credit {
+  flex: 1;
+  color: grey;
+  text-align: right;
+  font-family: "Karla", sans-serif;
+  font-size: 17px;
+  line-height: 23px;
+  letter-spacing: 0.2px;
+  color: #595A5C;
+}
+@media (max-width: 480px) {
+  .wrapper footer > div.full .credit {
+    text-align: left;
+  }
+}
+
+.about {
+  padding-bottom: 50px;
+}
+
+.about-content {
+  display: flex;
+  padding-bottom: 50px;
+}
+@media (max-width: 480px) {
+  .about-content {
+    flex-direction: column;
+    text-align: left;
+    flex: 1;
+    width: 100%;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+  .about-content .about-img {
+    order: -1;
+  }
+  .about-content h3 {
+    order: -2;
+    font-size: 25px;
+  }
+  .about-content p {
+    order: 1;
+    font-size: 12px;
+  }
+}
+.about-content .about-standfirst {
+  flex: 1;
+  width: 50%;
+  text-align: left;
+  color: black;
+}
+.about-content .about-standfirst > div {
+  padding-bottom: 20px;
+}
+.about-content .about-standfirst > div h3 {
+  font-size: 40px;
+  font-family: Dala Floda;
+}
+@media (max-width: 480px) {
+  .about-content .about-standfirst > div {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .about-content .about-standfirst > div h3 {
+    font-size: 25px;
+  }
+}
+.about-content .about-standfirst p {
+  font-size: 18px;
+  font-family: "Karla", sans-serif;
+}
+@media (max-width: 480px) {
+  .about-content .about-standfirst {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 20px;
+  }
+  .about-content .about-standfirst p {
+    font-size: 14px;
+  }
+}
+.about-content .about-img {
+  flex: 1;
+  width: 50%;
+  text-align: right;
+}
+.about-content .about-img img {
+  width: 100%;
+}
+
+.contact .contact-content {
+  display: flex;
+  padding-right: 3%;
+  padding-left: 3%;
+  flex-flow: row wrap;
+  padding-top: 1%;
+  padding-bottom: 3%;
+}
+.contact .contact-content .left {
+  flex: 2;
+  font-size: 40px;
+  font-family: Dala Floda;
+}
+@media (max-width: 480px) {
+  .contact .contact-content .left {
+    font-size: 18px;
+  }
+}
+.contact .contact-content .middle {
+  flex: 1;
+  font-family: "Karla", sans-serif;
+  font-size: 17px;
+}
+.contact .contact-content .middle ul {
+  list-style-type: none;
+}
+@media (max-width: 480px) {
+  .contact .contact-content .middle {
+    font-size: 12px;
+    flex-direction: column;
+  }
+}
+.contact .contact-content .right {
+  flex: 1;
+  font-family: "Karla", sans-serif;
+  font-size: 17px;
+}
+.contact .contact-content .right ul {
+  list-style-type: none;
+}
+@media (max-width: 480px) {
+  .contact .contact-content .right {
+    font-size: 12px;
+  }
+}
+
+.menubar {
+  min-width: 100%;
+}
+.menubar ul {
+  display: flex;
+  background: #dedede;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 2% 0;
+}
+.menubar li a {
+  flex: 1;
+  color: black;
+  font-family: Dala Floda;
+  font-size: 20px;
+  line-height: 22px;
+}
+            </style>
+        </noscript>
+
+        <!-- Page Title -->
+        <title>Custkart</title>
+    </head>
+    <body class="">
+        <!-- Navbar -->
+        <!-- Navbar -->
+        <nav
+            class="navbar navbar-expand-lg navbar-light bg-white flex-column border-0"
+        >
+            <div class="container-fluid">
+                <div class="w-100">
+                    <div
+                        class="d-flex justify-content-between align-items-center flex-wrap"
+                    >
+                        <!-- Logo-->
+                        <a
+                            class="navbar-brand fw-bold fs-3 m-0 p-0 flex-shrink-0 order-0"
+                            href="./index.html"
+                        >
+                            <div class="d-flex align-items-center">
+                                <img class="logo-item" src =
+                                "/assets/images/logos/logo.svg".svg" alt="My
+                                Happy SVG" width="180px" height="auto">
+                            </div>
+                        </a>
+                        <!-- / Logo-->
+
+                        <!-- Navbar Icons-->
+                        <ul
+                            class="list-unstyled mb-0 d-flex align-items-center order-1 order-lg-2 nav-sidelinks"
+                        >
+                            <!-- Mobile Nav Toggler-->
+                            <li class="d-lg-none">
+                                <span
+                                    class="nav-link text-body d-flex align-items-center cursor-pointer"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#navbarNavDropdown"
+                                    aria-controls="navbarNavDropdown"
+                                    aria-expanded="false"
+                                    aria-label="Toggle navigation"
+                                    ><i class="ri-menu-line ri-lg me-1"></i>
+                                    Menu</span
+                                >
+                            </li>
+                            <!-- /Mobile Nav Toggler-->
+
+                            <!-- Navbar Search-->
+                            <li class="d-none d-sm-block">
+                                <span
+                                    class="nav-link text-body search-trigger cursor-pointer"
+                                    >Search</span
+                                >
+
+                                <!-- Search navbar overlay-->
+                                <div class="navbar-search d-none">
+                                    <div class="input-group mb-3 h-100">
+                                        <span
+                                            class="input-group-text px-4 bg-transparent border-0"
+                                            ><i class="ri-search-line ri-lg"></i
+                                        ></span>
+                                        <input
+                                            type="text"
+                                            class="form-control text-body bg-transparent border-0"
+                                            placeholder="Enter your search terms..."
+                                        />
+                                        <span
+                                            class="input-group-text px-4 cursor-pointer disable-child-pointer close-search bg-transparent border-0"
+                                            ><i
+                                                class="ri-close-circle-line ri-lg"
+                                            ></i
+                                        ></span>
+                                    </div>
+                                </div>
+                                <div class="search-overlay"></div>
+                                <!-- / Search navbar overlay-->
+                            </li>
+                            <!-- /Navbar Search-->
+
+                            <!-- Navbar Login-->
+                            <li class="ms-1 d-none d-lg-inline-block">
+                                <a
+                                    class="nav-link text-body"
+                                    href="./login.html"
+                                >
+                                    Account
+                                </a>
+                            </li>
+                            <!-- /Navbar Login-->
+
+                            <!-- Navbar Cart Icon-->
+                            <li
+                                class="ms-1 d-inline-block position-relative dropdown-cart"
+                            >
+                                <button
+                                    class="nav-link me-0 disable-child-pointer border-0 p-0 bg-transparent text-body"
+                                    type="button"
+                                >
+                                    Bag (2)
+                                </button>
+                                <div class="cart-dropdown dropdown-menu">
+                                    <!-- Cart Header-->
+                                    <div
+                                        class="d-flex justify-content-between align-items-center border-bottom pt-3 pb-4"
+                                    >
+                                        <h6 class="fw-bolder m-0">
+                                            Cart Summary (2 items)
+                                        </h6>
+                                        <i
+                                            class="ri-close-circle-line text-muted ri-lg cursor-pointer btn-close-cart"
+                                        ></i>
+                                    </div>
+                                    <!-- / Cart Header-->
+
+                                    <!-- Cart Items-->
+                                    <div>
+                                        <!-- Cart Product-->
+                                        <div
+                                            class="row mx-0 py-4 g-0 border-bottom"
+                                        >
+                                            <div
+                                                class="col-2 position-relative"
+                                            >
+                                                <picture class="d-block">
+                                                    <img
+                                                        class="img-fluid"
+                                                        src="./assets/images/products/product-cart-1.jpg"
+                                                        alt="HTML Bootstrap Template by Pixel Rocket"
+                                                    />
+                                                </picture>
+                                            </div>
+                                            <div class="col-9 offset-1">
+                                                <div>
+                                                    <h6
+                                                        class="justify-content-between d-flex align-items-start mb-2"
+                                                    >
+                                                        Nike Air VaporMax 2021
+                                                        <i
+                                                            class="ri-close-line ms-3"
+                                                        ></i>
+                                                    </h6>
+                                                    <span
+                                                        class="d-block text-muted fw-bolder text-uppercase fs-9"
+                                                        >Size: 9 / Qty: 1</span
+                                                    >
+                                                </div>
+                                                <p
+                                                    class="fw-bolder text-end text-muted m-0"
+                                                >
+                                                    $85.00
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- Cart Product-->
+                                        <div
+                                            class="row mx-0 py-4 g-0 border-bottom"
+                                        >
+                                            <div
+                                                class="col-2 position-relative"
+                                            >
+                                                <picture class="d-block">
+                                                    <img
+                                                        class="img-fluid"
+                                                        src="./assets/images/products/product-cart-2.jpg"
+                                                        alt="HTML Bootstrap Template by Pixel Rocket"
+                                                    />
+                                                </picture>
+                                            </div>
+                                            <div class="col-9 offset-1">
+                                                <div>
+                                                    <h6
+                                                        class="justify-content-between d-flex align-items-start mb-2"
+                                                    >
+                                                        Nike ZoomX Vaporfly
+                                                        <i
+                                                            class="ri-close-line ms-3"
+                                                        ></i>
+                                                    </h6>
+                                                    <span
+                                                        class="d-block text-muted fw-bolder text-uppercase fs-9"
+                                                        >Size: 11 / Qty: 1</span
+                                                    >
+                                                </div>
+                                                <p
+                                                    class="fw-bolder text-end text-muted m-0"
+                                                >
+                                                    $125.00
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /Cart Items-->
+
+                                    <!-- Cart Summary-->
+                                    <div>
+                                        <div class="pt-3">
+                                            <div
+                                                class="d-flex flex-column flex-md-row justify-content-md-between align-items-md-start mb-4 mb-md-2"
+                                            >
+                                                <div>
+                                                    <p class="m-0 fw-bold fs-5">
+                                                        Grand Total
+                                                    </p>
+                                                    <span
+                                                        class="text-muted small"
+                                                        >Inc $45.89 sales
+                                                        tax</span
+                                                    >
+                                                </div>
+                                                <p class="m-0 fs-5 fw-bold">
+                                                    $422.99
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a
+                                            href="./cart.html"
+                                            class="btn btn-outline-dark w-100 text-center mt-4"
+                                            role="button"
+                                            >View Cart</a
+                                        >
+                                        <a
+                                            href="./checkout.html"
+                                            class="btn btn-dark w-100 text-center mt-2"
+                                            role="button"
+                                            >Proceed To Checkout</a
+                                        >
+                                    </div>
+                                    <!-- / Cart Summary-->
+                                </div>
+                            </li>
+                            <!-- /Navbar Cart Icon-->
+                        </ul>
+                        <!-- Navbar Icons-->
+
+                        <!-- Main Navigation-->
+                        <div
+                            class="flex-shrink-0 collapse navbar-collapse navbar-collapse-light w-auto flex-grow-1 order-2 order-lg-1"
+                            id="navbarNavDropdown"
+                        >
+                            <!-- Menu-->
+                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                                <li
+                                    class="nav-item dropdown dropdown position-static"
+                                >
+                                    <a
+                                        class="nav-link dropdown-toggle"
+                                        href="#"
+                                        role="button"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false"
+                                    >
+                                        College Merchandise
+                                    </a>
+                                    <!-- Menswear dropdown menu-->
+                                    <div
+                                        class="dropdown-menu dropdown-megamenu"
+                                    >
+                                        <div class="container-fluid">
+                                            <div class="row g-0 g-lg-3">
+                                                <!-- Menswear Dropdown Menu Links Section-->
+                                                <div
+                                                    class="col col-lg-8 py-lg-5"
+                                                >
+                                                    <div
+                                                        class="row py-3 py-lg-0 flex-wrap gx-4 gy-6"
+                                                    >
+                                                        <!-- menu row-->
+                                                        <div class="col">
+                                                            <h6
+                                                                class="dropdown-heading"
+                                                            >
+                                                                Coats & Jackets
+                                                            </h6>
+                                                            <ul
+                                                                class="list-unstyled"
+                                                            >
+                                                                <li
+                                                                    class="dropdown-list-item"
+                                                                >
+                                                                    <a
+                                                                        class="dropdown-item"
+                                                                        href="./category.html"
+                                                                        >Waterproof
+                                                                        Jackets</a
+                                                                    >
+                                                                </li>
+                                                                <li
+                                                                    class="dropdown-list-item"
+                                                                >
+                                                                    <a
+                                                                        class="dropdown-item"
+                                                                        href="./category.html"
+                                                                        >Insulated
+                                                                        Jackets</a
+                                                                    >
+                                                                </li>
+                                                                <li
+                                                                    class="dropdown-list-item"
+                                                                >
+                                                                    <a
+                                                                        class="dropdown-item"
+                                                                        href="./category.html"
+                                                                        >Down
+                                                                        Jackets</a
+                                                                    >
+                                                                </li>
+                                                                <li
+                                                                    class="dropdown-list-item"
+                                                                >
+                                                                    <a
+                                                                        class="dropdown-item"
+                                                                        href="./category.html"
+                                                                        >Softshell
+                                                                        Jackets</a
+                                                                    >
+                                                                </li>
+                                                                <li
+                                                                    class="dropdown-list-item"
+                                                                >
+                                                                    <a
+                                                                        class="dropdown-item"
+                                                                        href="./category.html"
+                                                                        >Casual
+                                                                        Jackets</a
+                                                                    >
+                                                                </li>
+                                                                <li
+                                                                    class="dropdown-list-item"
+                                                                >
+                                                                    <a
+                                                                        class="dropdown-item"
+                                                                        href="./category.html"
+                                                                        >Windproof
+                                                                        Jackets</a
+                                                                    >
+                                                                </li>
+                                                                <li
+                                                                    class="dropdown-list-item"
+                                                                >
+                                                                    <a
+                                                                        class="dropdown-item"
+                                                                        href="./category.html"
+                                                                        >Breathable
+                                                                        Jackets</a
+                                                                    >
+                                                                </li>
+                                                                <li
+                                                                    class="dropdown-list-item"
+                                                                >
+                                                                    <a
+                                                                        class="dropdown-item"
+                                                                        href="./category.html"
+                                                                        >Cleaning
+                                                                        &
+                                                                        Proofing</a
+                                                                    >
+                                                                </li>
+                                                                <li
+                                                                    class="dropdown-list-item"
+                                                                >
+                                                                    <a
+                                                                        class="dropdown-item dropdown-link-all"
+                                                                        href="./category.html"
+                                                                        >View
+                                                                        All</a
+                                                                    >
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <!-- / menu row-->
+
+                                                        <!-- menu row-->
+                                                        <div class="col">
+                                                            <h6
+                                                                class="dropdown-heading"
+                                                            >
+                                                                Insulated
+                                                            </h6>
+                                                            <ul
+                                                                class="list-unstyled"
+                                                            >
+                                                                <li
+                                                                    class="dropdown-list-item"
+                                                                >
+                                                                    <a
+                                                                        class="dropdown-item"
+                                                                        href="./category.html"
+                                                                        >Insulated
+                                                                        Jackets</a
+                                                                    >
+                                                                </li>
+                                                                <li
+                                                                    class="dropdown-list-item"
+                                                                >
+                                                                    <a
+                                                                        class="dropdown-item"
+                                                                        href="./category.html"
+                                                                        >Bodywarmers</a
+                                                                    >
+                                                                </li>
+                                                                <li
+                                                                    class="dropdown-list-item"
+                                                                >
+                                                                    <a
+                                                                        class="dropdown-item"
+                                                                        href="./category.html"
+                                                                        >Parkas</a
+                                                                    >
+                                                                </li>
+                                                                <li
+                                                                    class="dropdown-list-item"
+                                                                >
+                                                                    <a
+                                                                        class="dropdown-item"
+                                                                        href="./category.html"
+                                                                        >Baselayers
+                                                                        &
+                                                                        Thermals</a
+                                                                    >
+                                                                </li>
+                                                                <li
+                                                                    class="dropdown-list-item"
+                                                                >
+                                                                    <a
+                                                                        class="dropdown-item"
+                                                                        href="./category.html"
+                                                                        >Winter
+                                                                        Hats</a
+                                                                    >
+                                                                </li>
+                                                                <li
+                                                                    class="dropdown-list-item"
+                                                                >
+                                                                    <a
+                                                                        class="dropdown-item"
+                                                                        href="./category.html"
+                                                                        >Scarves
+                                                                        &
+                                                                        Neck</a
+                                                                    >
+                                                                </li>
+                                                                <li
+                                                                    class="dropdown-list-item"
+                                                                >
+                                                                    <a
+                                                                        class="dropdown-item"
+                                                                        href="./category.html"
+                                                                        >Gloves
+                                                                        &
+                                                                        Mitts</a
+                                                                    >
+                                                                </li>
+                                                                <li
+                                                                    class="dropdown-list-item"
+                                                                >
+                                                                    <a
+                                                                        class="dropdown-item"
+                                                                        href="./category.html"
+                                                                        >Accessories</a
+                                                                    >
+                                                                </li>
+                                                                <li
+                                                                    class="dropdown-list-item"
+                                                                >
+                                                                    <a
+                                                                        class="dropdown-item dropdown-link-all"
+                                                                        href="./category.html"
+                                                                        >View
+                                                                        All</a
+                                                                    >
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <!-- / menu row-->
+
+                                                        <!-- menu row-->
+                                                        <div
+                                                            class="d-none d-xxl-block col"
+                                                        >
+                                                            <h6
+                                                                class="dropdown-heading"
+                                                            >
+                                                                Footwear
+                                                            </h6>
+                                                            <ul
+                                                                class="list-unstyled"
+                                                            >
+                                                                <li
+                                                                    class="dropdown-list-item"
+                                                                >
+                                                                    <a
+                                                                        class="dropdown-item"
+                                                                        href="./category.html"
+                                                                        >Lifestyle
+                                                                        &
+                                                                        Casual</a
+                                                                    >
+                                                                </li>
+                                                                <li
+                                                                    class="dropdown-list-item"
+                                                                >
+                                                                    <a
+                                                                        class="dropdown-item"
+                                                                        href="./category.html"
+                                                                        >Walking
+                                                                        Shoes</a
+                                                                    >
+                                                                </li>
+                                                                <li
+                                                                    class="dropdown-list-item"
+                                                                >
+                                                                    <a
+                                                                        class="dropdown-item"
+                                                                        href="./category.html"
+                                                                        >Running
+                                                                        Shoes</a
+                                                                    >
+                                                                </li>
+                                                                <li
+                                                                    class="dropdown-list-item"
+                                                                >
+                                                                    <a
+                                                                        class="dropdown-item"
+                                                                        href="./category.html"
+                                                                        >Military
+                                                                        Boots</a
+                                                                    >
+                                                                </li>
+                                                                <li
+                                                                    class="dropdown-list-item"
+                                                                >
+                                                                    <a
+                                                                        class="dropdown-item"
+                                                                        href="./category.html"
+                                                                        >Fabric
+                                                                        Walking
+                                                                        Boots</a
+                                                                    >
+                                                                </li>
+                                                                <li
+                                                                    class="dropdown-list-item"
+                                                                >
+                                                                    <a
+                                                                        class="dropdown-item"
+                                                                        href="./category.html"
+                                                                        >Leather
+                                                                        Walking
+                                                                        Boots</a
+                                                                    >
+                                                                </li>
+                                                                <li
+                                                                    class="dropdown-list-item"
+                                                                >
+                                                                    <a
+                                                                        class="dropdown-item"
+                                                                        href="./category.html"
+                                                                        >Wellies</a
+                                                                    >
+                                                                </li>
+                                                                <li
+                                                                    class="dropdown-list-item"
+                                                                >
+                                                                    <a
+                                                                        class="dropdown-item"
+                                                                        href="./category.html"
+                                                                        >Winter
+                                                                        Footwear</a
+                                                                    >
+                                                                </li>
+                                                                <li
+                                                                    class="dropdown-list-item"
+                                                                >
+                                                                    <a
+                                                                        class="dropdown-item dropdown-link-all"
+                                                                        href="./category.html"
+                                                                        >View
+                                                                        All</a
+                                                                    >
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <!-- / menu row-->
+
+                                                        <!-- menu row-->
+                                                        <div class="col">
+                                                            <h6
+                                                                class="dropdown-heading text-danger"
+                                                            >
+                                                                Special Offers
+                                                            </h6>
+                                                            <ul
+                                                                class="list-unstyled"
+                                                            >
+                                                                <li
+                                                                    class="dropdown-list-item"
+                                                                >
+                                                                    <a
+                                                                        class="dropdown-item text-danger"
+                                                                        href="./category.html"
+                                                                        >Insulated
+                                                                        Jackets</a
+                                                                    >
+                                                                </li>
+                                                                <li
+                                                                    class="dropdown-list-item"
+                                                                >
+                                                                    <a
+                                                                        class="dropdown-item text-danger"
+                                                                        href="./category.html"
+                                                                        >Bodywarmers</a
+                                                                    >
+                                                                </li>
+                                                                <li
+                                                                    class="dropdown-list-item"
+                                                                >
+                                                                    <a
+                                                                        class="dropdown-item text-danger"
+                                                                        href="./category.html"
+                                                                        >Parkas</a
+                                                                    >
+                                                                </li>
+                                                                <li
+                                                                    class="dropdown-list-item"
+                                                                >
+                                                                    <a
+                                                                        class="dropdown-item text-danger"
+                                                                        href="./category.html"
+                                                                        >Baselayers
+                                                                        &
+                                                                        Thermals</a
+                                                                    >
+                                                                </li>
+                                                                <li
+                                                                    class="dropdown-list-item"
+                                                                >
+                                                                    <a
+                                                                        class="dropdown-item text-danger"
+                                                                        href="./category.html"
+                                                                        >Winter
+                                                                        Hats</a
+                                                                    >
+                                                                </li>
+                                                                <li
+                                                                    class="dropdown-list-item"
+                                                                >
+                                                                    <a
+                                                                        class="dropdown-item text-danger"
+                                                                        href="./category.html"
+                                                                        >Scarves
+                                                                        &
+                                                                        Neck</a
+                                                                    >
+                                                                </li>
+                                                                <li
+                                                                    class="dropdown-list-item"
+                                                                >
+                                                                    <a
+                                                                        class="dropdown-item text-danger"
+                                                                        href="./category.html"
+                                                                        >Gloves
+                                                                        &
+                                                                        Mitts</a
+                                                                    >
+                                                                </li>
+                                                                <li
+                                                                    class="dropdown-list-item"
+                                                                >
+                                                                    <a
+                                                                        class="dropdown-item text-danger"
+                                                                        href="./category.html"
+                                                                        >Accessories</a
+                                                                    >
+                                                                </li>
+                                                                <li
+                                                                    class="dropdown-list-item"
+                                                                >
+                                                                    <a
+                                                                        class="dropdown-item text-danger dropdown-link-all"
+                                                                        href="./category.html"
+                                                                        >View
+                                                                        All</a
+                                                                    >
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <!-- / menu row-->
+                                                    </div>
+
+                                                    <div
+                                                        class="align-items-center justify-content-between mt-5 d-none d-lg-flex"
+                                                    >
+                                                        <div
+                                                            class="me-5 f-w-20"
+                                                        >
+                                                            <a
+                                                                class="d-block"
+                                                                href="./category.html"
+                                                            >
+                                                                <picture>
+                                                                    <img
+                                                                        class="img-fluid d-table mx-auto"
+                                                                        src="./assets/images/logos/logo-1.svg"
+                                                                        alt=""
+                                                                    />
+                                                                </picture>
+                                                            </a>
+                                                        </div>
+                                                        <div
+                                                            class="me-5 f-w-20"
+                                                        >
+                                                            <a
+                                                                class="d-block"
+                                                                href="./category.html"
+                                                            >
+                                                                <picture>
+                                                                    <img
+                                                                        class="img-fluid d-table mx-auto"
+                                                                        src="./assets/images/logos/logo-2.svg"
+                                                                        alt=""
+                                                                    />
+                                                                </picture>
+                                                            </a>
+                                                        </div>
+                                                        <div
+                                                            class="me-5 f-w-20"
+                                                        >
+                                                            <a
+                                                                class="d-block"
+                                                                href="./category.html"
+                                                            >
+                                                                <picture>
+                                                                    <img
+                                                                        class="img-fluid d-table mx-auto"
+                                                                        src="./assets/images/logos/logo-3.svg"
+                                                                        alt=""
+                                                                    />
+                                                                </picture>
+                                                            </a>
+                                                        </div>
+                                                        <div
+                                                            class="me-5 f-w-20"
+                                                        >
+                                                            <a
+                                                                class="d-block"
+                                                                href="./category.html"
+                                                            >
+                                                                <picture>
+                                                                    <img
+                                                                        class="img-fluid d-table mx-auto"
+                                                                        src="./assets/images/logos/logo-4.svg"
+                                                                        alt=""
+                                                                    />
+                                                                </picture>
+                                                            </a>
+                                                        </div>
+                                                        <div
+                                                            class="me-5 f-w-20"
+                                                        >
+                                                            <a
+                                                                class="d-block"
+                                                                href="./category.html"
+                                                            >
+                                                                <picture>
+                                                                    <img
+                                                                        class="img-fluid d-table mx-auto"
+                                                                        src="./assets/images/logos/logo-5.svg"
+                                                                        alt=""
+                                                                    />
+                                                                </picture>
+                                                            </a>
+                                                        </div>
+                                                        <div
+                                                            class="me-5 f-w-20"
+                                                        >
+                                                            <a
+                                                                class="d-block"
+                                                                href="./category.html"
+                                                            >
+                                                                <picture>
+                                                                    <img
+                                                                        class="img-fluid d-table mx-auto"
+                                                                        src="./assets/images/logos/logo-6.svg"
+                                                                        alt=""
+                                                                    />
+                                                                </picture>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- /Menswear Dropdown Menu Links Section-->
+
+                                                <!-- Menswear Dropdown Menu Images Section-->
+                                                <div
+                                                    class="col-lg-4 d-none d-lg-block"
+                                                >
+                                                    <div
+                                                        class="vw-50 border-start h-100 position-absolute"
+                                                    ></div>
+                                                    <div
+                                                        class="py-lg-5 position-relative z-index-10 px-lg-4"
+                                                    >
+                                                        <div class="row g-4">
+                                                            <div
+                                                                class="col-12 col-md-6"
+                                                            >
+                                                                <div
+                                                                    class="card justify-content-center d-flex align-items-center bg-transparent"
+                                                                >
+                                                                    <picture
+                                                                        class="w-100 d-block mb-2 mx-auto"
+                                                                    >
+                                                                        <img
+                                                                            class="w-100 rounded"
+                                                                            title=""
+                                                                            src="./assets/images/banners/banner-12.jpg"
+                                                                            alt="HTML Bootstrap Template by Pixel Rocket"
+                                                                        />
+                                                                    </picture>
+                                                                    <a
+                                                                        class="fw-bolder link-cover"
+                                                                        href="./category.html"
+                                                                        >Latest
+                                                                        Arrivals</a
+                                                                    >
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-12 col-md-6"
+                                                            >
+                                                                <div
+                                                                    class="card justify-content-center d-flex align-items-center bg-transparent"
+                                                                >
+                                                                    <picture
+                                                                        class="w-100 d-block mb-2 mx-auto"
+                                                                    >
+                                                                        <img
+                                                                            class="w-100 rounded"
+                                                                            title=""
+                                                                            src="./assets/images/banners/banner-13.jpg"
+                                                                            alt="HTML Bootstrap Template by Pixel Rocket"
+                                                                        />
+                                                                    </picture>
+                                                                    <a
+                                                                        class="fw-bolder link-cover"
+                                                                        href="./category.html"
+                                                                        >Accessories</a
+                                                                    >
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-12 col-md-6"
+                                                            >
+                                                                <div
+                                                                    class="card justify-content-center d-flex align-items-center bg-transparent"
+                                                                >
+                                                                    <picture
+                                                                        class="w-100 d-block mb-2 mx-auto"
+                                                                    >
+                                                                        <img
+                                                                            class="w-100 rounded"
+                                                                            title=""
+                                                                            src="./assets/images/banners/banner-14.jpg"
+                                                                            alt="HTML Bootstrap Template by Pixel Rocket"
+                                                                        />
+                                                                    </picture>
+                                                                    <a
+                                                                        class="fw-bolder link-cover"
+                                                                        href="./category.html"
+                                                                        >T-Shirts</a
+                                                                    >
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-12 col-md-6"
+                                                            >
+                                                                <div
+                                                                    class="card justify-content-center d-flex align-items-center bg-transparent"
+                                                                >
+                                                                    <picture
+                                                                        class="w-100 d-block mb-2 mx-auto"
+                                                                    >
+                                                                        <img
+                                                                            class="w-100 rounded"
+                                                                            title=""
+                                                                            src="./assets/images/banners/banner-15.jpg"
+                                                                            alt="HTML Bootstrap Template by Pixel Rocket"
+                                                                        />
+                                                                    </picture>
+                                                                    <a
+                                                                        class="fw-bolder link-cover"
+                                                                        href="./category.html"
+                                                                        >Jackets</a
+                                                                    >
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <a
+                                                            href="./category.html"
+                                                            class="btn btn-link p-0 fw-bolder text-link-border mt-5 text-dark mx-auto d-table"
+                                                            >Visit Mens
+                                                            Section</a
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <!-- Menswear Dropdown Menu Images Section-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- / Menswear dropdown menu-->
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a
+                                        class="nav-link dropdown-toggle"
+                                        href="#"
+                                        role="button"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false"
+                                    >
+                                        Custom Design
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a
+                                                class="dropdown-item"
+                                                href="./category.html"
+                                                >Hoodies</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                class="dropdown-item"
+                                                href="./category.html"
+                                                >TShirt</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                class="dropdown-item"
+                                                href="./category.html"
+                                                >Bags</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                class="dropdown-item"
+                                                href="./category.html"
+                                                >Caps</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link"
+                                        href="./category.html"
+                                        role="button"
+                                    >
+                                        Kids
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link"
+                                        href="./category.html"
+                                        role="button"
+                                    >
+                                        Sale
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a
+                                        class="nav-link dropdown-toggle"
+                                        href="#"
+                                        role="button"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false"
+                                    >
+                                        Pages
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a
+                                                class="dropdown-item"
+                                                href="./index.html"
+                                                >Homepage</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                class="dropdown-item"
+                                                href="./category.html"
+                                                >Category</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                class="dropdown-item"
+                                                href="./product.html"
+                                                >Product</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                class="dropdown-item"
+                                                href="./cart.html"
+                                                >Cart</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                class="dropdown-item"
+                                                href="./checkout.html"
+                                                >Checkout</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                class="dropdown-item"
+                                                href="./login.html"
+                                                >Login</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                class="dropdown-item"
+                                                href="./register.html"
+                                                >Register</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                class="dropdown-item"
+                                                href="./forgotten-password.html"
+                                                >Forgotten Password</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <!-- / Menu-->
+                        </div>
+                        <!-- / Main Navigation-->
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- / Navbar-->
+        <!-- / Navbar-->
+
+        <!-- Main Section-->
+        <section class="slider slider-container about">
+            <div class="full">
+              <img src="https://placehold.it/2000x500"/>
+                <figcaption>
+                  <span>
+                    About Bibi's
+                  </span>
+                </figcaption>
+            </div>
+          </section>
+        
+          <section class="about-content">
+            <div class="about-standfirst">
+              <div>
+                  <h3>Bibis is a cosy neighbourhood</h3><h3>cafe serving breakfast, lunch and</h3>
+                  <h3>brunch at the weekends.</h3>
+              </div>
+                  <p>Bibis is a cosy neighbourhood cafe serving</p>
+                  <p>breakfast, lunch and brunch at the weekends. The</p>
+                  <p>ever-changing and evolving menus are driven by</p>
+                  <p>creatiity, innoation and the use of prime</p>
+                  <p>produce from Ireland and abraod. Chef and owner</p>
+                  <p>Maisha Lenehan, working with her brother Geoff,</p>
+                  <p>have combined their individual skills to create a</p>
+                  <p>unique dining experience in the heart of Dublin 8.</p>
+            </div>
+        
+             <div class="about-img">
+              <img src="https://placehold.it/568x600"/>    
+            </div>
+          </section>
+        
+
+        <!-- Theme JS -->
+        <!-- Vendor JS -->
+        <script src="./assets/js/vendor.bundle.js"></script>
+
+        <!-- Theme JS -->
+        <script src="./assets/js/theme.bundle.js"></script>
+    </body>
+</html>

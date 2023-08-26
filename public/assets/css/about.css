@@ -1,0 +1,431 @@
+/* ABOUT US CSS */
+
+:root{
+  --accent: #6c5ce7;
+  --bg: #f1c40f;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.section{
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(255, 255, 255);
+}
+.container{
+  width: 80%;
+  margin-bottom: 5rem;
+  display: block;
+  margin: auto;
+  padding-top: 100px;
+}
+.content-section{
+  float: left;
+  width: 55%;
+  
+}
+.image-section{
+  float: none;
+  width: 40%;
+  padding: 30px;
+  padding-top: 80px;
+}
+.image-section img{
+  width: 60%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.content-section .title{
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-size: 28px;
+}
+.content-section .content h1{
+  margin-top: 20px;
+  color: #295552;
+}
+.content-section .content p{
+  margin-top: 10px;
+  font-family: sans-serif;
+  font-size: 17px;
+  line-height: 1.5;
+}
+.content-section .content .button{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.content-section .content .button a{
+  background-color: #3d3d3d;
+  padding: 12px 30px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+  letter-spacing: 1.5px;
+}
+.content-section .content .button a:hover{
+  background-color: #126a38;
+  color: #fff;
+}
+.content-section .content a{
+  background-color: #11604e;
+  padding: 12px 40px;
+  text-decoration: none;
+  color: #eff4add9;
+  font-size: 25px;
+  letter-spacing: 1.5px;
+}
+.content-section .social{
+  margin-top: 40px 40px;
+}
+.content-section .social i{
+  color: #070b20d5;
+  font-size: 30px;
+  padding: 0px  10px;
+}
+
+.content-section .social i:hover{
+  color: #3d3d3d;
+}
+.card__read-more--open{
+  display: block;
+  opacity: 1;
+  height: 11rem;
+}
+
+@media screen and (max-width: 800px){
+  .container{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 50px;
+  }
+  .content-section{
+    float: none;
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .image{
+    float: right;
+    width: 10%;
+    display: block;
+    margin: 10px;
+  }
+  .content-section .title{
+    text-align: center;
+    font-size: 19px;
+  }
+  .content-section .social{
+    text-align: left;
+  }
+}
+.card__read-more{
+  display: block;
+  opacity: 0;
+  height: 0;
+  transition: all 0.5s;
+}
+.card__read-more--open{
+  display: block;
+  opacity: 1;
+  height: 12rem;
+}
+.read-more-btn{
+  display: block;
+  padding: 15px 60px;
+  margin-bottom: 20px;
+  background-color: #191b1adb;
+  color: #f6f6f6;
+  padding: 0.6rem 1.5rem;
+  font-size: 25px;
+  position: relative;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.read-more-btn:hover{
+  background-color: #fff;
+  color: #202a24;
+  box-shadow: 0 0 2rem rgba(0,0,0,0.1);
+  transform: translateY(-3px);
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 300px) {
+  .image-section {
+    float: none;
+    width: 100%;
+    padding: 30px;
+    padding-top: 10px;
+  }
+  .content-section{
+    float: none;
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+
+  .image-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+  .content-section .content .button{
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
+    width: 100%;
+    display: block;
+    margin: auto;
+
+    
+  }
+  .card__read-more--open{
+    display: block;
+    opacity: 1;
+    transition: all 0.5s;
+    height: auto;
+    
+  }
+  .content-section .social{
+    text-align: left;
+  }
+
+}
+
+
+/* CSS FOR FOUNDER CARD */
+
+
+/* Google Font CDN Link */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+.container1{
+  width: 60%;
+  margin-bottom: 3rem;
+  /* display: center; */
+  margin: relative;
+  padding-top: 10px;
+}
+.container1 .team1{
+  text-align: right;
+  padding: 10px;
+  padding-bottom: 10px;
+  color: #202a24;
+  font: sans serif;
+}
+.container1 .main-card1{
+  display: flex;
+  justify-content: space-evenly;
+  width: 184%;
+  transition: 1s;
+}
+/* #two:checked ~ .main-card1{
+  margin-left: -100%;
+} */
+.container1 .main-card1 .cards1{
+  width: calc(100% / 2 - 10px);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 20px;
+  justify-content: space-between;
+}
+.main-card1 .cards1 .card1{
+  width: calc(100% / 3 - 10px);
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+}
+.main-card1 .cards1 .card1:hover{
+  transform: translateY(-15px);
+}
+.cards1 .card1 .content1{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cards1 .card1 .content1 .img{
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  padding: 3px;
+  background: #205368;
+  margin-bottom: 14px;
+}
+.card1 .content1 .img img{
+  height: 100%;
+  width: 100%;
+  border: 3px solid #ffff;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.card1 .content1 .name1{
+  font-size: 20px;
+  font-weight: 500;
+}
+.card1 .content1 .job1{
+  font-size: 20px;
+  color: #205368;
+}
+.card1 .content1 .media-icons1{
+  margin-top: 10px;
+  display: flex;
+
+}
+.media-icons1 a{
+  text-align: center;
+  line-height: 33px;
+  height: 35px;
+  width: 35px;
+  margin: 0 4px;
+  font-size: 14px;
+  color: #FFF;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background: #205368;
+  transition: all 0.3s ease;
+}
+.media-icons1 a:hover{
+  color: #205368;
+  background-color: #fff;
+  border-color: #205368;
+}
+ .container1 .button1{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.button1 label{
+  height: 15px;
+  width: 15px;
+  border-radius: 20px;
+  background: #fff;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.button1 label .active1{
+  width: 35px;
+}
+#one:checked ~ .button1 .one{
+  width: 35px;
+}
+#one:checked ~ .button1 .two{
+  width: 15px;
+}
+#two:checked ~ .button .one{
+  width: 15px;
+}
+#two:checked ~ .button .two{
+  width: 35px;
+}
+input[type="radio"]{
+  display: none;
+}
+@media (max-width: 768px) {
+  .main-card1 .cards1 .card1{
+    margin: 20px 0 10px 0;
+    width: auto;
+  }
+  .container1 .main-card1{
+    display: flex;
+    justify-content: space-evenly;
+    width: 168%;
+    transition: 1s;
+  }
+  .container1{
+    width: 60%;
+    margin-bottom: 3rem;
+    margin: relative;
+    padding-top: 10px;
+  }
+
+  .container1 .team1{
+    
+    border: 5px;
+    text-align: center;
+    color: #202a24;
+    font: 'Poppins';
+  }
+}
+
+@media (max-width: 1150px) {
+  .main-card1 .cards1 .card1{
+    margin: 20px 0 10px 0;
+    width: 100%;
+  }
+  .container1 .main-card1{
+    display: flex;
+    justify-content: space-evenly;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: relative;
+    transition: 1s;
+  }
+  /* .container1 .card2{
+    display: flex;
+    justify-content: space-evenly;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: relative;
+    transition: 1s;
+  } */
+  .container1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    margin-bottom: 3rem;
+    margin: relative;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .container1 .team1{
+    margin-left: auto;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+    border: 5px;
+    text-align: center;
+    color: #202a24;
+    font: 'Poppins';
+  }
+}
+
+@media (max-width: 600px) {
+  .main-card1 .cards1 .card1{
+    /* margin: 20px 0 10px 0; */
+    width: 100%;
+  }
+  .container1 .team1{
+    margin-left: auto;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 10px;
+    color: #202a24;
+    font: sans-serif;
+  }
+}

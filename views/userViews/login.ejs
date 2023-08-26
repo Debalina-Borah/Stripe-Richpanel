@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background: #1E5296;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+    }
+    *, *:before, *:after {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Nunito', sans-serif;
+      color: #384047;
+    }
+    
+    
+    form {
+      max-width: 300px;
+      padding: 25px;
+      background: #f4f7f8;
+      border-radius: 18px;
+    }
+    
+    h1,h2,h3 {
+      margin: 0 0 20px 0;
+      text-align: center;
+    }
+    
+    input[type="text"],
+    input[type="password"],
+    input[type="date"],
+    input[type="datetime"],
+    input[type="email"],
+    input[type="number"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="time"],
+    input[type="url"],
+    textarea,
+    select {
+      font-size: 16px;
+      height: auto;
+      margin: 0;
+      outline: 1px;
+      padding: 15px;
+      width: 100%;
+      background-color: #e8eeef;
+      color: #000000;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: 1px solid #c6c6c6;
+    }
+    
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin: 0 4px 8px 0;
+      border: 1px #000000;
+    }
+    
+    select {
+      padding: 6px;
+      height: 32px;
+      border-radius: 2px;
+    }
+    
+    button {
+      padding: 15px 39px 15px 25px;
+      color: #FFF;
+      background-color: #1E5296;
+      font-size: 18px;
+      text-align: center;
+      font-style: normal;
+      border-radius: 5px;
+      width: 100%;
+      border: 1px solid #1E5296;
+      border-width: 1px 1px 3px;
+      box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+      margin-bottom: 10px;
+      margin-top: 5px;
+    }
+    
+    fieldset {
+      margin-bottom: 30px;
+      border: none;
+      margin: 10px;
+    }
+    
+    legend {
+      font-size: 1.4em;
+      margin-bottom: 10px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-size:medium;
+      font-weight:800;
+    }
+    
+    label.light {
+      font-weight: 300;
+      display: inline;
+    }
+    
+    .number {
+      background-color: #5fcf80;
+      color: #fff;
+      height: 30px;
+      width: 30px;
+      display: inline-block;
+      font-size: 0.8em;
+      margin-right: 4px;
+      line-height: 30px;
+      text-align: center;
+      text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+      border-radius: 100%;
+    }
+    
+    @media screen and (min-width: 480px) {
+    
+      form {
+        max-width: 480px;
+      }
+    
+    }
+    
+    button { cursor: pointer; }
+        </style>
+</head>
+<body>
+<div class="screen-1">
+	<title>Sign Up Form</title>
+	<link rel="stylesheet" href="https://codepen.io/gymratpacks/pen/VKzBEp#0">
+	<link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="row">
+    <div class="col-md-12">
+        <form action="/user/login" method="POST">
+            <h3>Log In</h3>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <input type="radio" id="under_13">
+            <label for="under_13" class="light">Remember me</label><br>
+            <button type="submit">Log in</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
